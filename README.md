@@ -22,10 +22,9 @@ Nginx|负载均衡服务器
 Maven|项目构建管理工具
 
 ### 项目整体架构图
+![image](https://github.com/KArthurL/myMiaosha/blob/master/images/1577351967(1).png)
 
-待补充……
-
-### 优化思路
+### 优化措施
 本项目的优化主要在商品查询模块和商品下单模块
 
 #### 1.缓存
