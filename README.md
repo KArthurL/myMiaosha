@@ -50,6 +50,7 @@ Maven|项目构建管理工具
 ### 优化结果
 #### 应用部署
 后端应用水平部署至两台服务器上；单独部署Nginx实现负载均衡；单独部署Redis共享缓存、布隆过滤器和储存分布式会话。如下图所示：
+![image](https://github.com/KArthurL/myMiaosha/blob/master/images/1577346419(1).png)
 
 #### 压测结果
 查询Qps：4000
