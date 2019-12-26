@@ -21,10 +21,10 @@ MySQL|数据库
 Nginx|负载均衡服务器
 Maven|项目构建管理工具
 
-### 项目整体架构图
+## 项目整体架构图
 ![image](https://github.com/KArthurL/myMiaosha/blob/master/images/1577351967(1).png)
 
-### 优化措施
+## 优化措施
 本项目的优化主要在商品查询模块和商品下单模块
 
 #### 1.缓存
@@ -46,7 +46,7 @@ Maven|项目构建管理工具
 
 使用RocketMQ完成异步下单，通过分布式事务消息二阶段提交，消费端根据全局流水id通过MySQL主键进行幂等去重。下单流程见下图：
 ![image](https://github.com/KArthurL/myMiaosha/blob/master/images/1577345133(1).png)
-### 优化结果
+## 优化结果
 #### 应用部署
 后端应用水平部署至两台服务器上；单独部署Nginx实现负载均衡；单独部署Redis共享缓存、布隆过滤器和储存分布式会话。如下图所示：
 ![image](https://github.com/KArthurL/myMiaosha/blob/master/images/1577346419(1).png)
